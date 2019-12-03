@@ -54,9 +54,13 @@ git push -u origin master
 
 ---
 ## Workflow & Commands
+* `git status`: helps the user see which files have been edited or changed since the last commit (it will be in red) and which files are staged for the commit (it will be in green)
 
+* `git add`: adds the current/entire directory: all files that have changes (including deleted/renamed files) to the "stage"
 
+* `git commit -m "<message>"`: takes a snapshot of the files on the stage (creates the revision history)
+
+* `git push`: sends any changes made in the local repo (your ide) to the remote repo (on GitHub)
 
 ---
 ## Rolling Back Changes
-
