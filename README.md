@@ -26,18 +26,37 @@ We need an SSH key in order to verify that the user is trying to work/interact w
 
 ---
 ## Repository Setup
+> **What is an repository?**
+An repository is similiar to having a folder within your drive. It's a place to store all your files and your revision history (it can be public or private).
 
+Setting up a repo in your ide (local):
+1. Create a new directory that's seperate from your root directory (hint: use `mkdir <file name>`)
+2. Once you've created your directory make sure to `cd` into it
+3. When you're in your desired location, you can use `git init` to turn it into a repository (now you should be able to see the word "(master)" in your terminal)
+4.  In order to use `git add` and `git commit` you must create changes within a file
+5.  To create a file use `touch <file name>` and to open up the file use `c9 <filename`
+6.  Once you've made changes in your file, you can use `git add` to put the changes onto the stage
+7.  By using `git commit -m <message>` you can name the changes you added onto the stage
 
-
+Using GitHub to create a repository and linking it to your ide: 
+1. Firstly, make sure you're logged in on GitHub
+2. Navigate for the `+` icon on the top right corner of the site
+3. Click on the selection: `New repository`
+4. Input the exact repository name as the one on your local ide
+5. Once you've hit `Create repository` make sure that your using SSH and not HTTPS
+6. On the page look for this:
+```
+git remote add origin git@github.com:<your github account>/<name of your repository>.git
+git push -u origin master
+```
+7. Go back to your ide and make sure you're at your desire repository
+8. Input the SSH key provided to you 
 
 ---
 ## Workflow & Commands
 
 
 
-
 ---
 ## Rolling Back Changes
-
-
 
