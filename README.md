@@ -20,7 +20,7 @@ Setting up your IDE:
   * *Make sure to read all the instructions carefully*
 
 > **What is an SSH key?**
-An SSH key is a way to help users securely connect to their remote device. It's also an alternative way to login without having to input your username and password all the time.
+An SSH key is a way to help users securely connect to their remote device. It's also an alternative way to login without having to input your username and password all the time.    
 **Why do we need an SSH key?**
 We need an SSH key in order to verify that the user is trying to work/interact with their remotes.
 
@@ -50,7 +50,7 @@ git remote add origin git@github.com:<your github account>/<name of your reposit
 git push -u origin master
 ```
 7. Go back to your ide and make sure you're at your desire repository
-8. Input the SSH key provided to you 
+8. Copy and paste the 2 command lines you saw after you finished creating your remote repository on Github. 
 
 ---
 ## Workflow & Commands
