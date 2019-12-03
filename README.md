@@ -4,8 +4,8 @@ _by Lydia Ye_
 
 ---
 ## Git vs. GitHub
-* **Git:** allows user to have the power over the versions they've created throughout their ide (if local then -- refer to as the terminal)
-* **Github:** is used to collaborate with your peers, which is efficient because your edits don't intervene with the other collaborators.
+* **Git:** allows the user to have the power over the versions they've created throughout their ide.
+* **Github:** used to collaborate with your peers, which is efficient because your edits don't intervene with the other collaborators.
 
 ---
 ## Initial Setup
@@ -64,3 +64,18 @@ git push -u origin master
 
 ---
 ## Rolling Back Changes
+To undo your edit:
+* Use `git checkout -- <filename>` in order to undo the recent changes you've made in your file
+
+To undo your add:
+* Use `git reset HEAD <filename>` to remove your changes from the stage
+
+To undo your commit:
+* Use `git reset --soft HEAD~1` or `git reset --hard HEAD~1` to undo your last commit 
+  * `git reset --soft HEAD~1`: helps preserve the undone changes 
+  * `git reset --hard HEAD~1`: permanently deletes the changes 
+
+To undo your push:
+* Using `git log` find the SHA or hash for the commit that you want to revert to (make sure to press q to exit out of the log) 
+* In your ide type in `git revert <sha/hash>`
+* To match your commits from your ide to your remote use `git reset HEAD^ --hard` and `git push origin master`
