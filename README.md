@@ -87,4 +87,4 @@ To undo your commit:
 To undo your push:
 * Using `git log` find the SHA or hash for the commit that you want to revert to (make sure to press q to exit out of the log)
 * In your ide type in `git revert <sha/hash>`
-* To match your commits from your ide to your remote use `git reset HEAD^ --hard` and `git push origin master`
+* To match your commits from your ide to your remote use `git reset HEAD^ --hard`
