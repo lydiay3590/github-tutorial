@@ -4,8 +4,16 @@ _by Lydia Ye_
 
 ---
 ## Git vs. GitHub
-* **Git:** allows the user to have the power over the versions they've created throughout their ide.
-* **Github:** used to collaborate with your peers, which is efficient because your edits don't intervene with the other collaborators.
+* **Git:** allows the user to have the access over the versions they've created in their remote.
+* **Github:** used to collaborate with others, which is efficient because your edits don't intervene with the other collaborators.
+
+
+|              Git              |             GitHub             |
+| ----------------------------- | ------------------------------ | 
+| 1. Used in your local remote  | 1. Runs on GitHub (cloud)      |
+| 2. Runs in the command line   | 2. Requires git                |
+| 3. Useful for version control | 3. Allows users to collaborate |
+
 
 ---
 ## Initial Setup
@@ -20,7 +28,7 @@ Setting up your IDE:
   * *Make sure to read all the instructions carefully*
 
 > **What is an SSH key?**
-An SSH key is a way to help users securely connect to their remote device. It's also an alternative way to login without having to input your username and password all the time.    
+An SSH key is a way to help users securely connect to their remote device. It's also an alternative way to login without having to input your username and password all the time.
 **Why do we need an SSH key?**
 We need an SSH key in order to verify that the user is trying to work/interact with their remotes.
 
@@ -38,7 +46,7 @@ Setting up a repo in your ide (local):
 6.  Once you've made changes in your file, you can use `git add .` to put the changes onto the stage
 7.  By using `git commit -m "<message>"` you can name the changes you added onto the stage
 
-Using GitHub to create a repository and linking it to your ide: 
+Using GitHub to create a repository and linking it to your ide:
 1. Firstly, make sure you're logged in on GitHub
 2. Navigate for the `+` icon on the top right corner of the site
 3. Click on the selection: `New repository`
@@ -50,7 +58,7 @@ git remote add origin git@github.com:<your github account>/<name of your reposit
 git push -u origin master
 ```
 7. Go back to your ide and make sure you're at your desire repository
-8. Copy and paste the 2 command lines you saw after you finished creating your remote repository on Github. 
+8. Copy and paste the 2 command lines you saw after you finished creating your remote repository on Github.
 
 ---
 ## Workflow & Commands
@@ -71,11 +79,11 @@ To undo your add:
 * Use `git reset HEAD <filename>` to remove your changes from the stage
 
 To undo your commit:
-* Use `git reset --soft HEAD~1` or `git reset --hard HEAD~1` to undo your last commit 
-  * `git reset --soft HEAD~1`: helps preserve the undone changes 
-  * `git reset --hard HEAD~1`: permanently deletes the changes 
+* Use `git reset --soft HEAD~1` or `git reset --hard HEAD~1` to undo your last commit
+  * `git reset --soft HEAD~1`: helps preserve the undone changes
+  * `git reset --hard HEAD~1`: permanently deletes the changes
 
 To undo your push:
-* Using `git log` find the SHA or hash for the commit that you want to revert to (make sure to press q to exit out of the log) 
+* Using `git log` find the SHA or hash for the commit that you want to revert to (make sure to press q to exit out of the log)
 * In your ide type in `git revert <sha/hash>`
 * To match your commits from your ide to your remote use `git reset HEAD^ --hard` and `git push origin master`
